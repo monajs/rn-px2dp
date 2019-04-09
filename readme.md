@@ -2,9 +2,6 @@
 
 ✨✨ 解决在不同屏幕尺寸下页面展示效果不统一的布局问题
 
-## 背景
-> [React native 屏幕适配解决方案实战](https://github.com/func-star/blog/issues/30)
-
 ## 安装
 ```
 $ npm i --save @monajs/rn-px2dp
@@ -75,3 +72,8 @@ const _propList = [
 
 ## 联系我
 > 微信：599321378
+
+
+## 参考文章
+[pixelratio](https://github.com/facebook/react-native-website/blob/master/website/versioned_docs/version-0.19/pixelratio.md)
+[px、dp、sp对比](https://stackoverflow.com/questions/2025282/what-is-the-difference-between-px-dip-dp-and-sp/2025541#2025541)
