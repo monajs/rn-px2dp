@@ -45,6 +45,38 @@ const px2dp = function (styles = {}, config = {}) {
 	return styles
 }
 
+const _util = function () {
+	return {
+		flexCenter: {
+			display: 'flex',
+			flexDirection: 'row',
+			justifyContent: 'center',
+			alignItems: 'center'
+		},
+		flexCenterX: {
+			display: 'flex',
+			flexDirection: 'row',
+			justifyContent: 'center'
+		},
+		flexRightX: {
+			display: 'flex',
+			flexDirection: 'row',
+			justifyContent: 'flex-end'
+		},
+		flexCenterY: {
+			display: 'flex',
+			flexDirection: 'row',
+			alignItems: 'center'
+		},
+		flexBottomY: {
+			display: 'flex',
+			flexDirection: 'row',
+			alignItems: 'flex-end'
+		}
+	}
+}
+
 px2dp._px2dp = _px2dp
+px2dp._util = _util
 
 module.exports = px2dp
