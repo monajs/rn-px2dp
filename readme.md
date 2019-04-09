@@ -46,7 +46,7 @@ import Px2dp from '@monajs/rn-px2dp'
 | 参数 | 类型 | 默认值 | 描述 |
 | --- | --- | --- | :-- |
 | styles | `Object` | | 转换前的样式对象 |
-| [config] | `Object` | | |
+| [config] | `Object` | | 非必传 |
 | [config.uiWidthPx] | `Number` | `750` | 设计稿总宽度 |
 | [config.props] | `Array` | | 需要自定义转换的样式属性 |
 
