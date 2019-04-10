@@ -75,5 +75,5 @@ const _propList = [
 
 
 ## 参考文章
-[pixelratio](https://github.com/facebook/react-native-website/blob/master/website/versioned_docs/version-0.19/pixelratio.md)
-[px、dp、sp对比](https://stackoverflow.com/questions/2025282/what-is-the-difference-between-px-dip-dp-and-sp/2025541#2025541)
+* [pixelratio](https://github.com/facebook/react-native-website/blob/master/website/versioned_docs/version-0.19/pixelratio.md)
+* [px、dp、sp对比](https://stackoverflow.com/questions/2025282/what-is-the-difference-between-px-dip-dp-and-sp/2025541#2025541)
