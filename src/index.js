@@ -28,6 +28,10 @@ const _px2dp = function (uiElementPx, uiWidthPx = 750) {
 	return uiElementPx * _deviceWidthDp / uiWidthPx
 }
 
+const _not = function (uiElementPx) {
+	return `${uiElementPx}_no2px2dp`
+}
+
 const px2dp = function (styles = {}, config = {}) {
 	let { uiWidthPx = 750, props = [] } = config
 
@@ -36,8 +40,12 @@ const px2dp = function (styles = {}, config = {}) {
 	for (let className in styles) {
 		const classItem = styles[className]
 		for (let prop in classItem) {
-			if (classItem.hasOwnProperty(prop) && props.includes(prop) && typeof classItem[prop] === 'number') {
-				classItem[prop] = _px2dp(classItem[prop], uiWidthPx)
+			if (classItem.hasOwnProperty(prop) && props.includes(prop)) {
+				if (typeof classItem[prop] === 'number') {
+					classItem[prop] = _px2dp(classItem[prop], uiWidthPx)
+				} else if (/\d_no2px2dp$/i.test(classItem[prop])) {
+					classItem[prop] = classItem[prop].split('_')[0] - 0
+				}
 			}
 		}
 	}
@@ -76,5 +84,6 @@ const _util = {
 
 px2dp._px2dp = _px2dp
 px2dp._util = _util
+px2dp._not = _not
 
 module.exports = px2dp

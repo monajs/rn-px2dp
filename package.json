@@ -1,6 +1,6 @@
 {
     "name": "@monajs/rn-px2dp",
-    "version": "1.2.0",
+    "version": "1.4.0",
     "description": "rn 项目屏幕适配解决方案",
     "main": "index.js",
     "scripts": {

@@ -10,7 +10,7 @@ $ npm i --save @monajs/rn-px2dp
 ## demo1
 
 ```js
-import Px2dp from '@monajs/rn-px2dp'
+import px2dp from '@monajs/rn-px2dp'
 
 const styles = StyleSheet.create(px2dp({
 	container: {
@@ -40,6 +40,23 @@ import Px2dp from '@monajs/rn-px2dp'
 <Text style={{fontSize: px2dp._px2dp(20, 375)}}>@monajs/rn-px2dp</Text>
 ```
 
+## demo3
+
+```js
+import px2dp from '@monajs/rn-px2dp'
+
+const styles = StyleSheet.create(px2dp({
+	container: {
+        flex: 1,
+        fontSize: px2dp._not(20),
+        margin: 10,
+        justifyContent: 'center',
+        alignItems: 'center',
+        backgroundColor: '#F5FCFF',
+    })
+```
+
+
 ## API
 ### px2dp(styles, config)
 
@@ -64,11 +81,19 @@ const _propList = [
 ```
 
 ### px2dp._px2dp(uiElementPx, uiWidthPx)
+**描述**: 对单个样式进行转换
 
 | 参数 | 类型 | 默认值 | 描述 |
 | --- | --- | --- | :-- |
 | uiElementPx | `Number` | | 设计稿元素宽度 |
 | uiWidthPx | `Number` | `750` | 设计稿总宽度 |
+
+### px2dp._not(uiElementPx)
+**描述**: 对单个样式进行保护
+
+| 参数 | 类型 | 默认值 | 描述 |
+| --- | --- | --- | :-- |
+| uiElementPx | `Number` | | 设计稿元素宽度 |
 
 ## 联系我
 > 微信：yx12032331
