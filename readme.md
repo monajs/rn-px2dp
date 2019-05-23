@@ -71,12 +71,12 @@ const styles = StyleSheet.create(px2dp({
 ```js
 const _propList = [
 	'width', 'height',
-	'top', 'right', 'bottom', 'left',
-	'margin', 'marginTop', 'marginRight', 'marginBottom', 'marginLeft',
-	'padding', 'paddingTop', 'paddingRight', 'paddingBottom', 'paddingLeft',
-	'borderRadius', 'borderTopLeftRadius', 'borderTopRightRadius', 'borderBottomLeftRadius', 'borderBottomRightRadius',
-	'shadowRadius',
-	'fontSize'
+    'top', 'right', 'bottom', 'left',
+    'margin', 'marginTop', 'marginRight', 'marginBottom', 'marginLeft', 'marginVertical', 'marginHorizontal',
+    'padding', 'paddingTop', 'paddingRight', 'paddingBottom', 'paddingLeft', 'paddingVertical', 'paddingHorizontal',
+    'borderRadius', 'borderTopLeftRadius', 'borderTopRightRadius', 'borderBottomLeftRadius', 'borderBottomRightRadius',
+    'shadowRadius',
+    'fontSize'
 ]
 ```
 

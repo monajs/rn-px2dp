@@ -14,8 +14,8 @@ import { Dimensions } from 'react-native'
 const _propList = [
 	'width', 'height',
 	'top', 'right', 'bottom', 'left',
-	'margin', 'marginTop', 'marginRight', 'marginBottom', 'marginLeft',
-	'padding', 'paddingTop', 'paddingRight', 'paddingBottom', 'paddingLeft',
+	'margin', 'marginTop', 'marginRight', 'marginBottom', 'marginLeft', 'marginVertical', 'marginHorizontal',
+	'padding', 'paddingTop', 'paddingRight', 'paddingBottom', 'paddingLeft', 'paddingVertical', 'paddingHorizontal',
 	'borderRadius', 'borderTopLeftRadius', 'borderTopRightRadius', 'borderBottomLeftRadius', 'borderBottomRightRadius',
 	'shadowRadius',
 	'fontSize'
